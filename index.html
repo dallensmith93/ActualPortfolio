@@ -12,6 +12,28 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            margin-top: auto;
+            padding-bottom: 0;
+        }
+
+        .project-image {
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 
 <body class="bg-light">
@@ -46,6 +68,7 @@
         <section class="row mt-5 g-4">
             <div class="col-md-4">
                 <div class="card h-100 border-0 shadow-sm theme-section">
+                    <img src="path/to/your-image1.jpg" alt="Project 1 Image" class="project-image">
                     <div class="card-body">
                         <h3 class="card-title">Featured Project 1</h3>
                         <p class="card-text">Description of Project 1.</p>
@@ -54,6 +77,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card h-100 border-0 shadow-sm theme-section">
+                    <img src="path/to/your-image2.jpg" alt="Project 2 Image" class="project-image">
                     <div class="card-body">
                         <h3 class="card-title">Featured Project 2</h3>
                         <p class="card-text">Description of Project 2.</p>
@@ -62,6 +86,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card h-100 border-0 shadow-sm theme-section">
+                    <img src="path/to/your-image3.jpg" alt="Project 3 Image" class="project-image">
                     <div class="card-body">
                         <h3 class="card-title">Featured Project 3</h3>
                         <p class="card-text">Description of Project 3.</p>
@@ -71,9 +96,9 @@
         </section>
     </main>
 
-    <footer class="bg-primary text-white py-4 mt-5">
+    <footer class="bg-primary text-white py-4">
         <div class="container text-center">
-            <p class="mb-1" color="black">&copy; 2025 My Portfolio. All rights reserved.</p>
+            <p class="mb-1">&copy; 2025 My Portfolio. All rights reserved.</p>
             <div class="social-icons">
                 <a href="https://github.com/dallensmith93" class="text-white me-3 fs-4" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com/in/dallen-smith-14822b218" class="text-white fs-4" target="_blank"><i class="fab fa-linkedin"></i></a>
