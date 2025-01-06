@@ -4,40 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>About Me - My Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+    </style>
 </head>
 
-<body>
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">My Portfolio</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="social-icons">
-                <a href="https://github.com/dallensmith93" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/dallen-smith-14822b218/" target="_blank"><i class="fab fa-linkedin"></i></a>
+<body class="bg-light">
+    <header class="bg-primary py-3 shadow">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a href="index.html" class="navbar-brand fw-bold">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="ms-3">
+                    <a href="https://github.com/dallensmith93" class="text-white me-3 fs-4" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/dallen-smith-14822b218/" class="text-white fs-4" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
         </nav>
     </header>
 
-    <footer>
-        <div class="footer-content">
+    <main class="container mt-5">
+        <section class="row align-items-center py-5">
+            <div class="col-md-6">
+                <h2 class="display-4 fw-bold">About Me</h2>
+                <p class="lead text-muted">Hello! I'm Dallen Smith, a passionate web developer and UX designer dedicated to creating engaging and functional digital experiences. I specialize in designing intuitive user interfaces and building responsive websites with modern technologies.</p>
+                <p>With a strong background in computer science and design, I strive to bridge the gap between creativity and functionality. I am constantly learning new technologies to enhance my skill set and deliver exceptional results.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="img/IMG_2846.jpg" alt="Dallen Smith" class="img-fluid rounded-circle shadow" style="max-width: 300px;">
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white py-4">
+        <div class="container text-center">
             <p>&copy; 2025 My Portfolio. All rights reserved.</p>
             <div class="social-icons">
-                <a href="https://github.com/dallensmith93" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/dallen-smith-14822b218/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/dallensmith93" class="text-white me-3 fs-4" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dallen-smith-14822b218/" class="text-white fs-4" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
